@@ -1,0 +1,163 @@
+:root {
+  --primary-gradient: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+  --success-gradient: linear-gradient(135deg, #1cc88a 0%, #13855c 100%);
+  --info-gradient: linear-gradient(135deg, #36b9cc 0%, #258391 100%);
+  --warning-gradient: linear-gradient(135deg, #f6c23e 0%, #dda20a 100%);
+  --danger-gradient: linear-gradient(135deg, #e74a3b 0%, #be2617 100%);
+  --sidebar-bg: #1e293b;
+  --body-bg: #f8fafc;
+  --card-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", "Source Sans 3", sans-serif;
+  background-color: var(--body-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Card Enhancements */
+.card {
+  border: none !important;
+  box-shadow: var(--card-shadow) !important;
+  border-radius: 0.75rem !important;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e3e6f0 !important;
+  padding: 1rem 1.25rem !important;
+}
+
+.card-title {
+  font-weight: 700 !important;
+  color: #4e73df !important;
+  margin-bottom: 0 !important;
+  font-size: 1.1rem !important;
+}
+
+/* Table Enhancements */
+.table thead th {
+  background-color: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+  border-top: none;
+  border-bottom: 2px solid #e3e6f0;
+}
+
+.table tbody td {
+  vertical-align: middle;
+  padding: 1rem 0.75rem;
+  color: #1e293b;
+  border-bottom: 1px solid #e3e6f0;
+}
+
+/* Avatar Circle */
+.avatar-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #4e73df;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-right: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Refinements */
+.btn {
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+  background: var(--primary-gradient);
+  border: none;
+}
+
+.btn-success {
+  background: var(--success-gradient);
+  border: none;
+}
+
+.btn-danger {
+  background: var(--danger-gradient);
+  border: none;
+}
+
+.btn-info {
+  background: var(--info-gradient);
+  border: none;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+
+/* Modal Enhancements */
+.modal-content {
+  border-radius: 1rem !important;
+  border: none !important;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.app-content {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Dashboard Boxes */
+.small-box {
+  border-radius: 1rem !important;
+  border: none !important;
+  box-shadow: var(--card-shadow) !important;
+  transition: transform 0.3s;
+}
+
+.small-box:hover {
+  transform: translateY(-5px);
+}
