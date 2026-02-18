@@ -27,7 +27,9 @@ const Login = () => {
             toast.success('Access Granted! Welcome back.');
             navigate('/dashboard');
         } catch (err) {
-            toast.error('Invalid credentials. Please try again.');
+            console.error('Login Error:', err);
+            const errorMessage = err.response?.data?.detail || err.message || 'Connection failed. Please try again.';
+            toast.error(errorMessage === 'Incorrect username or password' ? 'Invalid credentials. Please try again.' : `Error: ${errorMessage}`);
         } finally {
             setLoading(false);
         }
