@@ -81,7 +81,7 @@ const Login = () => {
                             </div>
                         </div>
 
-                        <div className="d-grid">
+                        <div className="d-grid mb-4">
                             <button type="submit" className="btn btn-primary py-2 fw-bold shadow-sm" disabled={loading}>
                                 {loading ? (
                                     <><span className="spinner-border spinner-border-sm me-2"></span>Authenticating...</>
@@ -91,6 +91,18 @@ const Login = () => {
                             </button>
                         </div>
                     </form>
+
+                    <div className="mt-4 p-3 bg-light rounded-3 border border-dashed text-center">
+                        <div className="small fw-bold text-muted text-uppercase mb-2" style={{ letterSpacing: '0.05rem' }}>Demo Access</div>
+                        <div className="d-flex justify-content-center gap-3">
+                            <div>
+                                <span className="text-muted small">User:</span> <code className="text-primary fw-bold">admin</code>
+                            </div>
+                            <div>
+                                <span className="text-muted small">Pass:</span> <code className="text-primary fw-bold">adminpassword</code>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="card-footer bg-light border-0 py-3 text-center rounded-bottom">
                     <small className="text-muted">Protected by Enterprise Grade Security</small>
